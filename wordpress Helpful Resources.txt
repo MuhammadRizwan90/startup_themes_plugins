@@ -1,0 +1,21 @@
+/** wp-config rules */
+
+// for debuging white page erorr
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+
+/** Memory Limit */
+define('WP_MEMORY_LIMIT', '256M');
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );
+
+Resolve "WordPress Asking for FTP Credentials" Error?	
+define('FS_METHOD','direct');
+
+/** add .htaccess*/
+php_value upload_max_filesize 1064M
+php_value post_max_size 1064M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+
